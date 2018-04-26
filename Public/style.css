@@ -1,0 +1,57 @@
+
+.container{
+    height:900px;
+    text-align: center;
+    font-weight: bold;
+}
+
+select ,option{
+    font-weight: bold;
+}
+
+#mapid {
+    height: 900px;
+}
+
+.borderStyle {
+    border-style: inset;
+}
+
+#name{
+    text-align: center; margin: 20px;
+}
+
+img{
+    height: 70px;
+}
+
+#weatherDetails{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+#weatherDetails td, #weatherDetails th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#weatherDetails tr:nth-child(even){background-color: #f2f2f2;}
+
+#weatherDetails tr:hover {background-color: #ddd;}
+
+#weatherDetails th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4ba3af;
+    color: white;
+    text-align: center;
+}
+
+.tableBlock{
+    margin-top: 80px;
+}

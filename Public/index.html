@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherPractice</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin="" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <div class="row" style="background-color: #2f6f9f">
+            <div class="col-sm-4 col-md-4 col-lg-4" style="margin-left: 65vh">
+                <select id="selectCity" class="custom-select">
+                    <option disabled selected value>Select City</option>
+                    <option value="Tel Aviv,IL">Tel Aviv</option>
+                    <option  value="London,GB">London</option>
+                    <option  value="Paris,FR">Paris</option>
+                    <option  value="New York,US">New York</option>
+                    <option  value="Rome,IT">Rome</option>
+                    <option  value="Tokyo,JP">Tokyo</option>
+                    <option  value="Barcelona,ES">Barcelona</option>
+                </select>
+            </div>
+        </div>
+
+            <div class="row">
+
+                <div id="mapid" class="col-lg-6 container borderStyle" >Map</div>
+
+                <div class="col-lg-6 container borderStyle" >
+
+                    <div>
+                        <h1 id="name"> </h1>
+                        <span id="icon"> </span>
+                        <span id="temperature" style="margin: 20px;"> </span>
+                    </div>
+                    <div class="tableBlock">
+                        <table id="weatherDetails">
+                            <tr>
+                                <th>Cloudiness</th>
+                                <th>Weather description</th>
+                                <th>Humidity</th>
+                            </tr>
+                            <tr>
+                                <td id="cloudiness"></td>
+                                <td id="rain"></td>
+                                <td id="humidity"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--<div id="cloudiness" style="text-align: left; margin: 20px;"> Cloudiness: </div>
+                    <div id="rain" style="text-align: left;  margin: 20px;"> Weather description: </div>
+                    <div id="humidity" style="text-align: left;  margin: 20px;"> Humidity: </div>-->
+                </div>
+            </div>
+
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+                integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+                crossorigin=""></script>
+        <script src="app.js"></script>
+        <script src="weather.js"></script>
+        <script src="city.js"></script>
+
+</body>
+</html>
